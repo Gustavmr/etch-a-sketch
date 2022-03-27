@@ -22,12 +22,20 @@ function createGrid () {
 function highlightBlock (e) {
     e.target.classList.add("hover");
 }
+
+function resetGrid() {
+    allBlocks.forEach(block => block.classList.remove("hover"));  
+}
+
 const container = document.querySelector("#container");
+const reset = document.querySelector("#reset");
 createGrid();
 const allBlocks = document.querySelectorAll(".block");
-// const firstBlock = document.querySelector(".block");
 
-// firstBlock.addEventListener("mouseover", function(e) {e.target.style.color = "green";})
+
+
+
 allBlocks.forEach(block => block.addEventListener("mouseover", highlightBlock));
+reset.addEventListener("click",resetGrid);
 
 
