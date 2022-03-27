@@ -1,0 +1,20 @@
+#container {
+    padding: 40px;
+}
+
+.blockLine {
+    display: flex;
+    height: 100px;
+    gap: 2px;
+    padding-top: 2px;
+}
+
+.block {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.hover {
+    background-color: blue;
+}
