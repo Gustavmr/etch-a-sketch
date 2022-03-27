@@ -1,5 +1,9 @@
 #container {
     padding: 40px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .blockLine {
@@ -7,11 +11,11 @@
     height: 100px;
     gap: 2px;
     padding-top: 2px;
+    flex: 1
 }
 
 .block {
-    height: 100px;
-    width: 100px;
+    flex: 1;
     background-color: aqua;
 }
 
