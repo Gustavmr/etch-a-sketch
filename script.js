@@ -1,7 +1,3 @@
-const container = document.querySelector("#container");
-
-createGrid();
-
 function createBlockLine () {
     let blockLine = document.createElement("div");
     blockLine.classList.add("blockLine");
@@ -22,3 +18,16 @@ function createGrid () {
         createBlockLine();
     }
 }
+
+function highlightBlock (e) {
+    e.target.classList.add("hover");
+}
+const container = document.querySelector("#container");
+createGrid();
+const allBlocks = document.querySelectorAll(".block");
+// const firstBlock = document.querySelector(".block");
+
+// firstBlock.addEventListener("mouseover", function(e) {e.target.style.color = "green";})
+allBlocks.forEach(block => block.addEventListener("mouseover", highlightBlock));
+
+
